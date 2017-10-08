@@ -17,6 +17,7 @@ func join() {
     res, _ := http.Get(joinURL)  
     defer res.Body.Close()
 }
+// message type
 type Msg struct {
     By       string  `json:"by"`
     To       string  `json:"to"`
